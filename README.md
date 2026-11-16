@@ -1,5 +1,7 @@
 # phpMyAdmin on Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/phpmyadmin-1?utm_medium=integration&utm_source=button&utm_campaign=phpmyadmin)
+
 This repo is the source of the **phpMyAdmin** Railway template. It deploys:
 
 | Service | Source | What it does |
