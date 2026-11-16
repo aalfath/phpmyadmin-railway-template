@@ -29,7 +29,7 @@ All other variables of the [official image](https://docs.phpmyadmin.net/en/lates
 
 ## What the wrapper adds
 
-- `railway-start.sh`: sets `APACHE_PORT` from `PORT`, sets `PMA_ABSOLUTE_URI` to `https://$RAILWAY_PUBLIC_DOMAIN/`, writes `PMA_BLOWFISH_SECRET` into `config.secret.inc.php`, then runs the image's own entrypoint.
+- `railway-start.sh`: keeps only Apache's `mpm_prefork` module (Railway's runtime can bring back `mpm_event`, and Apache then crash-loops with "More than one MPM loaded"), sets `APACHE_PORT` from `PORT`, sets `PMA_ABSOLUTE_URI` to `https://$RAILWAY_PUBLIC_DOMAIN/`, writes `PMA_BLOWFISH_SECRET` into `config.secret.inc.php`, then runs the image's own entrypoint.
 - `conf.d/railway.inc.php`: refuses passwordless logins and turns off the in-app version check.
 
 ## Updates
