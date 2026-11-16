@@ -2,6 +2,10 @@
 
 Each entry is one version of this Railway template. Breaking changes are listed first.
 
+## 5.2.3-2 (2026-11-16)
+
+- README: Deploy on Railway button linking to the published template `phpmyadmin-1`. No change to the deployed service.
+
 ## 5.2.3-1 (2026-11-16)
 
 - First release: phpMyAdmin 5.2.3 (`phpmyadmin:5.2.3-apache@sha256:e4b3eb5305cd42d21512bb55def2bab52625d56df927ad4ee1864a9354c84d40`), PHP 8.3.
